@@ -44,8 +44,8 @@ public class ApodWithStats {
   @NonNull
   @Override
   public String toString() {
-    return String.format("%s (%s); last accessed = %s; access count = %d",
-        apod.getTitle(), apod.getMediaType(), lastAccess, accessCount);
+    return String.format("%s (%s); last accessed = %s; access count = %d; date published = %s",
+        apod.getTitle(), apod.getMediaType(), lastAccess, accessCount, apod.getDate());
   }
 
 }
