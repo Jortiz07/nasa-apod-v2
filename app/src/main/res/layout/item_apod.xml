@@ -4,22 +4,23 @@
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
   xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:padding="8dp">
+  android:padding="@dimen/item_dimen">
 
   <ImageView
     android:id="@+id/thumbnail"
-    android:layout_width="0dp"
+    android:layout_width="@dimen/zero"
     android:layout_height="wrap_content"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toStartOf="@+id/title"
     app:layout_constraintHorizontal_weight="3"
-    android:layout_marginEnd="8dp"/>
+    android:layout_marginEnd="@dimen/item_dimen"
+    android:adjustViewBounds="true"/>
 
   <TextView
     android:id="@+id/title"
-    android:layout_width="0dp"
+    android:layout_width="@dimen/zero"
     android:layout_height="wrap_content"
     app:layout_constraintStart_toEndOf="@+id/thumbnail"
     app:layout_constraintTop_toTopOf="parent"
@@ -27,12 +28,12 @@
     app:layout_constraintEnd_toStartOf="@+id/date"
     app:layout_constraintHorizontal_weight="4"
     app:layout_constraintVertical_chainStyle="packed"
-    android:layout_marginEnd="8dp"
-    android:layout_marginBottom="8dp"/>
+    android:layout_marginEnd="@dimen/item_dimen"
+    android:layout_marginBottom="@dimen/item_dimen"/>
 
   <TextView
     android:id="@+id/date"
-    android:layout_width="0dp"
+    android:layout_width="@dimen/zero"
     android:layout_height="wrap_content"
     app:layout_constraintStart_toEndOf="@+id/title"
     app:layout_constraintBaseline_toBaselineOf="@+id/title"
@@ -41,7 +42,7 @@
 
   <TextView
     android:id="@+id/access"
-    android:layout_width="0dp"
+    android:layout_width="@dimen/zero"
     android:layout_height="wrap_content"
     app:layout_constraintTop_toBottomOf="@+id/title"
     app:layout_constraintStart_toStartOf="@+id/title"
