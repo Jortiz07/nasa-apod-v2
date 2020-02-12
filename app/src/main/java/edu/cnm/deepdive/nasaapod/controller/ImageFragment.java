@@ -69,8 +69,7 @@ public class ImageFragment extends Fragment {
       loading.setVisibility(View.GONE);
       Toast toast = Toast.makeText(getActivity(),
           getString(R.string.error_message, throwable.getMessage()), Toast.LENGTH_LONG);
-      toast.setGravity(Gravity.BOTTOM, 0,
-          (int) getResources().getDimension(R.dimen.toast_vertical_margin));
+      toast.setMargin(-1, 0.1f);
       toast.show();
     });
   }
@@ -116,8 +115,7 @@ public class ImageFragment extends Fragment {
       public void onPageFinished(WebView view, String url) {
         loading.setVisibility(View.GONE);
         Toast toast = Toast.makeText(getActivity(), apod.getTitle(), Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.BOTTOM, 0, (int) getContext().getResources()
-            .getDimensionPixelOffset(R.dimen.toast_vertical_margin));
+        toast.setMargin(-1, 0.1f);
         toast.show();
       }
     });
