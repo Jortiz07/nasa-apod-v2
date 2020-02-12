@@ -8,6 +8,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import edu.cnm.deepdive.nasaapod.R;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,4 +27,7 @@ public class MainActivity extends AppCompatActivity {
     NavigationUI.setupWithNavController(navView, navController);
   }
 
+  public void loadApod(Date date) {
+
+  }
 }
